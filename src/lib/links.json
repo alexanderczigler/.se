@@ -1,0 +1,22 @@
+[
+  {
+    "name": "career",
+    "links": [
+      {
+        "icon": "github",
+        "name": "GitHub",
+        "url": "https://github.com/alexanderczigler"
+      }
+    ]
+  },
+  {
+    "name": "social",
+    "links": [
+      {
+        "icon": "book",
+        "name": "Goodreads",
+        "url": "https://www.goodreads.com/user/show/53571813-alexander-czigler"
+      }
+    ]
+  }
+]
