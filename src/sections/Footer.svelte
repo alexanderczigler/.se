@@ -28,8 +28,8 @@
 
   hr {
     border: 0;
-    border-top: 1px solid var(--earth);
+    border-top: 1px solid var(--oasis);
     height: 0;
-    margin: 16px 0 0 0;
+    margin: 64px 0 0 0;
   }
 </style>

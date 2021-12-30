@@ -54,7 +54,7 @@
     display: inline-block;
     border-radius: 50%;
     margin: 0 1em 0 0;
-    border: 1px var(--white) solid;
+    border: 1px var(--pearl) solid;
   }
 
   div.section {
