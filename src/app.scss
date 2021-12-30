@@ -1,10 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Josefin+Sans:wght@100;200;300;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Josefin+Sans:wght@100;200;300;400&display=swap');
+
+:root {
+  --blizzard: #feffff;
+  --pearl: #17252a;
+  --oasis: #fbeec1;
+  --earth: #bc986a;
+}
 
 html,
 body {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: var(--keppel);
+  background-color: var(--blizzard);
   font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  color: var(--pearl);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  #svelte {
+    max-width: 800px;
+    margin-top: 2em;
+    margin-left: 4em;
+  }
+}
+
+h3 {
+  color: var(--earth);
+  text-transform: capitalize;
+  font-size: 2em;
+  font-weight: 100;
+}
+
+h4 {
+  color: var(--earth);
+  font-size: 0.75em;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+h3,
+h4 {
+  margin-top: 4em 0 1em 1em;
+}
+
+a {
+  background-color: var(--oasis);
+  color: var(--pearl);
+  text-decoration: none;
+}
+
+a.icon {
+  background-color: var(--blizzard);
+}
+
+a:hover {
+  color: var(--oasis);
+  background-color: var(--pearl);
+  text-decoration: none;
+}
+
+a.icon:hover {
+  background-color: var(--blizzard);
+}
+
+p {
+  font-weight: 300;
+  margin: 1em 1em;
 }

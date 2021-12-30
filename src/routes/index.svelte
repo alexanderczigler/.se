@@ -1,16 +1,23 @@
 <script>
   import '../app.scss';
+
+  import Footer from '../sections/Footer.svelte';
+  import Header from '../sections/Header.svelte';
+  import Introduction from '../sections/Introduction.svelte';
 </script>
 
-<h1>Alexander Czigler</h1>
-<h2>Backend Engineer at <a href="https://iteam.se">Iteam</a></h2>
+<Header />
+<Introduction />
 
-<ul>
-  <li>
-    <i class="iconoir-github" />
-    <a href="https://github.com/alexanderczigler">GitHub</a>
-  </li>
-</ul>
+<h3>Experience</h3>
+
+<p>
+  I am going to add my resumé here soon. In the mean time, check out my <a
+    href="https://linkedin.com/in/alexanderczigler">LinkedIn profile</a
+  >.
+</p>
+
+<Footer />
 
 <style>
 </style>
