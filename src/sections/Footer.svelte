@@ -1,8 +1,10 @@
 <hr />
 
 <div id="footer">
-  <p>2021</p>
-  <p>Alexander Matthias Czigler</p>
+  <p>
+    2021<br />
+    Alexander Matthias Czigler
+  </p>
 
   <span class="icon-links">
     <a href="mailto:nfo@ilix.se"> <i class="iconoir-mail" /></a>
