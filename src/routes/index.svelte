@@ -1,32 +1,18 @@
 <script>
   import '../app.scss';
 
-  import Link from '../components/Link.svelte';
-
-  import links from '../lib/links.json';
+  import Footer from '../sections/Footer.svelte';
+  import Header from '../sections/Header.svelte';
+  import Introduction from '../sections/Introduction.svelte';
 </script>
 
-<h1>Alexander Czigler</h1>
-<h2>Backend Engineer at <a href="https://iteam.se">Iteam</a></h2>
+<Header />
+<Introduction />
 
-<h3>Hello!</h3>
-<p>
-  My name is Alexander and I live in Stockholm, Sweden. I work as an IT consultant mainly focusing
-  on system development and agile coaching/mentoring.
-</p>
+<Footer />
 
-{#each links as category}
-  <div>
-    <h3>{category.name}</h3>
-    <ul>
-      {#each category.links as link}
-        <li>
-          <Link icon={link.icon} name={link.name} url={link.url} />
-        </li>
-      {/each}
-    </ul>
-  </div>
-{/each}
+<!-- <h3>Experience</h3>
 
+<p>TODO: implement</p> -->
 <style>
 </style>
