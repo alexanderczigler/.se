@@ -1,16 +1,12 @@
 <script>
-  import GitHub from '../components/icon-links/GitHub.svelte';
-  import LinkedIn from '../components/icon-links/LinkedIn.svelte';
-  import Mail from '../components/icon-links/Mail.svelte';
+  import IconLinks from '../components/IconLinks.svelte';
 
   import { url } from 'gravatar';
   let gravatarUrl = url('dev@ilix.se', { s: 256 });
 </script>
 
 <span id="icons" class="icon-links">
-  <Mail />
-  <LinkedIn />
-  <GitHub />
+  <IconLinks />
 </span>
 
 <div class="section">
@@ -58,7 +54,7 @@
     display: inline-block;
     border-radius: 50%;
     margin: 0 1em 0 0;
-    border: 1px var(--white) solid;
+    border: 1px var(--earth) solid;
   }
 
   div.section {
