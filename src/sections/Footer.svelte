@@ -14,7 +14,13 @@
     <IconLinks />
   </span>
 
-  <p>Icons by <a href="https://iconoir.com">Iconoir</a></p>
+  <p>
+    Built using
+    <a href="https://kit.svelte.dev/">SvelteKit</a> |
+    <a href="https://github.com/alexanderczigler/.nfo">Source code</a>
+    | Icons by
+    <a href="https://iconoir.com">Iconoir</a>
+  </p>
 </div>
 
 <style>
