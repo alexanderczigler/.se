@@ -57,10 +57,18 @@ a {
   text-decoration: none;
 }
 
+a.icon {
+  background-color: var(--blizzard);
+}
+
 a:hover {
   color: var(--oasis);
   background-color: var(--pearl);
   text-decoration: none;
+}
+
+a.icon:hover {
+  background-color: var(--blizzard);
 }
 
 p {

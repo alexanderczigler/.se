@@ -1,12 +1,16 @@
 <script>
+  import GitHub from '../components/icon-links/GitHub.svelte';
+  import LinkedIn from '../components/icon-links/LinkedIn.svelte';
+  import Mail from '../components/icon-links/Mail.svelte';
+
   import { url } from 'gravatar';
   let gravatarUrl = url('dev@ilix.se', { s: 256 });
 </script>
 
 <span id="icons" class="icon-links">
-  <a href="mailto:dev@ilix.se"> <i class="iconoir-mail" /></a>
-  <a href="https://linkedin.com/in/alexanderczigler"> <i class="iconoir-linkedin" /></a>
-  <a href="https://github.com/alexanderczigler"> <i class="iconoir-github" /></a>
+  <Mail />
+  <LinkedIn />
+  <GitHub />
 </span>
 
 <div class="section">
@@ -22,10 +26,6 @@
 <style>
   #icons {
     float: right;
-  }
-
-  .icon-links a {
-    background-color: var(--blizzard);
   }
 
   h1 {
