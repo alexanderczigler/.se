@@ -2,10 +2,9 @@
 
 :root {
   --blizzard: #feffff;
-  --oyster: #def2f1;
-  --keppel: #3aafa9;
-  --myrtle: #2b7a78;
   --pearl: #17252a;
+  --oasis: #fbeec1;
+  --earth: #bc986a;
 }
 
 html,
@@ -33,14 +32,14 @@ body {
 }
 
 h3 {
-  color: var(--pearl);
+  color: var(--earth);
   text-transform: capitalize;
   font-size: 2em;
   font-weight: 100;
 }
 
 h4 {
-  color: var(--keppel);
+  color: var(--earth);
   font-size: 0.75em;
   font-weight: 300;
   text-transform: capitalize;
@@ -53,19 +52,15 @@ h4 {
 }
 
 a {
+  background-color: var(--oasis);
   color: var(--pearl);
   text-decoration: none;
-  border-bottom: 1px var(--pearl) dotted;
 }
 
 a:hover {
-  color: var(--oyster);
+  color: var(--oasis);
   background-color: var(--pearl);
   text-decoration: none;
-}
-
-a:visited {
-  color: var(--myrtle);
 }
 
 p {

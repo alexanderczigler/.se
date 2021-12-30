@@ -24,12 +24,12 @@
   }
 
   .icon-links a {
-    border-bottom: none;
+    background-color: var(--blizzard);
   }
 
   hr {
     border: 0;
-    border-top: 1px solid var(--pearl);
+    border-top: 1px solid var(--earth);
     height: 0;
     margin: 16px 0 0 0;
   }

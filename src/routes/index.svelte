@@ -9,10 +9,9 @@
 <Header />
 <Introduction />
 
+<h3>Experience</h3>
+
 <Footer />
 
-<!-- <h3>Experience</h3>
-
-<p>TODO: implement</p> -->
 <style>
 </style>
