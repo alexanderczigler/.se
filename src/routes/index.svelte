@@ -68,13 +68,8 @@
 
 <style>
   #content {
-    margin: 2em 0;
-    padding-bottom: 1em;
-  }
-
-  @media (min-width: 768px) {
-    #content {
-    }
+    margin: 0;
+    padding-bottom: 2em;
   }
 
   @media (min-width: 950px) {

@@ -44,6 +44,7 @@
   a:visited {
     background-color: var(--accent);
     color: var(--text-fade);
+    text-decoration: none;
   }
 
   a:hover {
