@@ -6,69 +6,68 @@
 </script>
 
 <div id="header">
-  <span id="icons" class="icon-links">
-    <Socials />
-  </span>
-
-  <div class="section">
+  <span class="title">
     <img src={gravatarUrl} alt="Alexander" />
     <span>
       <h1>Alexander M. Czigler</h1>
       <h2>Backend Engineer & Partner at Iteam Solutions</h2></span
     >
-  </div>
-</div>
+  </span>
 
-<hr />
+  <span class="socials">
+    <Socials />
+  </span>
+</div>
 
 <style>
   #header {
-    margin: 0 1em;
+    border-bottom: 1px var(--accent) solid;
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0;
+    padding-bottom: 1em;
+    text-align: center;
   }
 
-  #icons {
-    float: right;
+  span.title {
+    margin-left: 1em;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
   }
 
-  h1 {
-    color: var(--text-off);
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 3em;
-    font-weight: 200;
-    margin: 0.2em 0 0 4px;
-    text-transform: capitalize;
-  }
-
-  h2 {
-    color: var(--text-off);
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.1em;
-    font-weight: 100;
-    margin: 0 0 16px 4px;
-  }
-
-  hr {
-    border: 0;
-    border-top: 1px solid var(--accent);
-    height: 0;
-    margin: 16px 0 64px 0;
-  }
-
-  img {
+  span.title img {
     width: 5em;
     height: 5em;
-    display: inline-block;
     border-radius: 50%;
     margin: 0 1em 0 0;
-    border: 1px var(--text) solid;
+    border: 1px var(--text-fade) solid;
   }
 
-  div.section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
+  span.socials {
+    margin-right: 1em;
+  }
+
+  @media (min-width: 768px) {
+    #header {
+      flex-direction: row;
+      justify-content: space-between;
+
+      text-align: left;
+    }
+
+    span.title {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+  @media (min-width: 950px) {
+    #header {
+      justify-content: space-between;
+      margin: 2em auto;
+      max-width: 950px;
+    }
   }
 </style>
