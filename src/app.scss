@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Josefin+Sans:wght@100;200;300;400&display=swap');
 
 :root {
-  --blizzard: #feffff;
-  --pearl: #17252a;
-  --oasis: #fbeec1;
-  --earth: #bc986a;
+  --background: #2d283e;
+  --accent: #802bb1;
+  --color1: #564f6f;
+  --color2: #4c495d;
+  --text-off: #d1d7e0;
+  --text-on: #ffffff;
 }
 
 html,
 body {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-color: var(--blizzard);
+  background-color: var(--background);
   font-family: 'Josefin Sans', sans-serif;
+  font-size: large;
 }
 
 body {
-  color: var(--pearl);
+  color: var(--text-on);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,49 +25,32 @@ body {
 
 @media (min-width: 768px) {
   #svelte {
-    max-width: 800px;
     margin-top: 2em;
-    margin-left: 4em;
+    margin-right: auto;
+    margin-left: auto;
+    
+    max-width: 1000px;
   }
 }
 
 h3 {
-  color: var(--earth);
+  color: var(--text-off);
   text-transform: capitalize;
   font-size: 2em;
   font-weight: 100;
-}
-
-h4 {
-  color: var(--earth);
-  font-size: 0.75em;
-  font-weight: 300;
-  text-transform: capitalize;
-}
-
-h3,
-h4 {
-  margin-top: 4em 0 1em 1em;
+  // margin: 1em 0 1em 1em;
 }
 
 a {
-  background-color: var(--oasis);
-  color: var(--pearl);
+  background-color: var(--accent);
+  color: var(--text-off);
   text-decoration: none;
-}
-
-a.icon {
-  background-color: var(--blizzard);
 }
 
 a:hover {
-  color: var(--oasis);
-  background-color: var(--pearl);
+  background-color: var(--text-off);
+  color: var(--accent);
   text-decoration: none;
-}
-
-a.icon:hover {
-  background-color: var(--blizzard);
 }
 
 p {

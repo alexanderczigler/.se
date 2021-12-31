@@ -1,35 +1,45 @@
 <script>
-  import IconLinks from '../components/IconLinks.svelte';
+  import Socials from '../components/Socials.svelte';
 </script>
 
 <hr />
 
 <div id="footer">
+  <p>---</p>
+
   <p>
     2021<br />
     Alexander Matthias Czigler
   </p>
 
   <span class="icon-links">
-    <IconLinks />
+    <Socials />
   </span>
 
   <p>
-    Built using
-    <a href="https://kit.svelte.dev/">SvelteKit</a> |
-    <a href="https://github.com/alexanderczigler/.nfo">Source code</a>
-    | Icons by
-    <a href="https://iconoir.com">Iconoir</a>
+    <a
+      title="Check out the source code on GitHub"
+      target="_blank"
+      href="https://github.com/alexanderczigler/.nfo">Source code</a
+    >
+  </p>
+
+  <p>
+    Built using <a title="SvelteKit" target="_blank" href="https://kit.svelte.dev/">SvelteKit</a>
+    <br />
+    Icons by <a title="Iconoir" target="_blank" href="https://iconoir.com">Iconoir</a>
   </p>
 </div>
 
 <style>
   p {
+    color: var(--text-off);
     font-weight: 100;
   }
 
   #footer {
     text-align: center;
+    padding-bottom: 4em;
   }
 
   hr {
