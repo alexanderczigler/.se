@@ -29,13 +29,25 @@
 
 <style>
   #footer {
-    text-align: center;
-    padding-bottom: 4em;
     background-color: var(--background-fade);
+    border-top: 1px var(--text-fade) solid;
+    padding: 2em 0 4em 0;
+    text-align: center;
   }
 
   p {
     color: var(--text-fade);
     font-weight: 100;
+  }
+
+  a,
+  a:visited {
+    background-color: var(--accent);
+    color: var(--text-fade);
+  }
+
+  a:hover {
+    background-color: var(--accent-fade);
+    color: var(--text);
   }
 </style>

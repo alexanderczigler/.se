@@ -20,7 +20,6 @@
 
 <style>
   a {
-    background-color: var(--background);
     color: var(--haze);
     fill: var(--haze);
   }
