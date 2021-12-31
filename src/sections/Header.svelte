@@ -21,16 +21,20 @@
 
 <style>
   #header {
-    margin: 0 1em;
-
+    border-bottom: 1px var(--accent) solid;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    margin: 2em 0;
+    padding-bottom: 1em;
+    text-align: center;
   }
 
   span.title {
     margin-left: 1em;
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
   }
 
   span.title img {
@@ -45,15 +49,25 @@
     margin-right: 1em;
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 768px) {
     #header {
-      margin-top: 2em;
-      margin-right: auto;
-      margin-left: auto;
+      flex-direction: row;
+      justify-content: space-between;
 
-      max-width: 1000px;
+      text-align: left;
+    }
 
-      border-bottom: 1px var(--accent) solid;
+    span.title {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+  @media (min-width: 950px) {
+    #header {
+      justify-content: space-between;
+      margin: 2em auto;
+      max-width: 950px;
     }
   }
 </style>
