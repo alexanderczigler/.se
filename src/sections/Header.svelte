@@ -1,49 +1,55 @@
 <script>
-  import IconLinks from '../components/IconLinks.svelte';
+  import Socials from '../components/Socials.svelte';
 
   import { url } from 'gravatar';
   let gravatarUrl = url('dev@ilix.se', { s: 256 });
 </script>
 
-<span id="icons" class="icon-links">
-  <IconLinks />
-</span>
+<div id="header">
+  <span id="icons" class="icon-links">
+    <Socials />
+  </span>
 
-<div class="section">
-  <img src={gravatarUrl} alt="Alexander" />
-  <span>
-    <h1>Alexander M. Czigler</h1>
-    <h2>Backend Engineer & Partner at Iteam Solutions</h2></span
-  >
+  <div class="section">
+    <img src={gravatarUrl} alt="Alexander" />
+    <span>
+      <h1>Alexander M. Czigler</h1>
+      <h2>Backend Engineer & Partner at Iteam Solutions</h2></span
+    >
+  </div>
 </div>
 
 <hr />
 
 <style>
+  #header {
+    margin: 0 1em;
+  }
+
   #icons {
     float: right;
   }
 
   h1 {
-    color: var(--pearl);
+    color: var(--text-off);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 3em;
-    font-weight: 100;
+    font-weight: 200;
     margin: 0.2em 0 0 4px;
     text-transform: capitalize;
   }
 
   h2 {
-    color: var(--pearl);
+    color: var(--text-off);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.1em;
-    font-weight: 200;
+    font-weight: 100;
     margin: 0 0 16px 4px;
   }
 
   hr {
     border: 0;
-    border-top: 1px solid var(--earth);
+    border-top: 1px solid var(--accent);
     height: 0;
     margin: 16px 0 64px 0;
   }
@@ -54,12 +60,10 @@
     display: inline-block;
     border-radius: 50%;
     margin: 0 1em 0 0;
-    border: 1px var(--earth) solid;
+    border: 1px var(--text) solid;
   }
 
   div.section {
-    background-color: var(--black);
-    border-bottom: 8px var(--azure) solid;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
