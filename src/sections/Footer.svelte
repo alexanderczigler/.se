@@ -2,11 +2,7 @@
   import Socials from '../components/Socials.svelte';
 </script>
 
-<hr />
-
 <div id="footer">
-  <p>---</p>
-
   <p>
     2021<br />
     Alexander Matthias Czigler
@@ -32,20 +28,14 @@
 </div>
 
 <style>
-  p {
-    color: var(--text-off);
-    font-weight: 100;
-  }
-
   #footer {
     text-align: center;
     padding-bottom: 4em;
+    background-color: var(--background-fade);
   }
 
-  hr {
-    border: 0;
-    border-top: 1px solid var(--oasis);
-    height: 0;
-    margin: 64px 0 0 0;
+  p {
+    color: var(--text-fade);
+    font-weight: 100;
   }
 </style>

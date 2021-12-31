@@ -6,69 +6,54 @@
 </script>
 
 <div id="header">
-  <span id="icons" class="icon-links">
-    <Socials />
-  </span>
-
-  <div class="section">
+  <span class="title">
     <img src={gravatarUrl} alt="Alexander" />
     <span>
       <h1>Alexander M. Czigler</h1>
       <h2>Backend Engineer & Partner at Iteam Solutions</h2></span
     >
-  </div>
-</div>
+  </span>
 
-<hr />
+  <span class="socials">
+    <Socials />
+  </span>
+</div>
 
 <style>
   #header {
     margin: 0 1em;
+
+    display: flex;
+    justify-content: space-between;
   }
 
-  #icons {
-    float: right;
+  span.title {
+    margin-left: 1em;
+    display: flex;
+    justify-content: flex-start;
   }
 
-  h1 {
-    color: var(--text-off);
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 3em;
-    font-weight: 200;
-    margin: 0.2em 0 0 4px;
-    text-transform: capitalize;
-  }
-
-  h2 {
-    color: var(--text-off);
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.1em;
-    font-weight: 100;
-    margin: 0 0 16px 4px;
-  }
-
-  hr {
-    border: 0;
-    border-top: 1px solid var(--accent);
-    height: 0;
-    margin: 16px 0 64px 0;
-  }
-
-  img {
+  span.title img {
     width: 5em;
     height: 5em;
-    display: inline-block;
     border-radius: 50%;
     margin: 0 1em 0 0;
-    border: 1px var(--text) solid;
+    border: 1px var(--text-fade) solid;
   }
 
-  div.section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
+  span.socials {
+    margin-right: 1em;
+  }
+
+  @media (min-width: 1000px) {
+    #header {
+      margin-top: 2em;
+      margin-right: auto;
+      margin-left: auto;
+
+      max-width: 1000px;
+
+      border-bottom: 1px var(--accent) solid;
+    }
   }
 </style>

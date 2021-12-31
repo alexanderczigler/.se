@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Josefin+Sans:wght@100;200;300;400&display=swap');
 
 :root {
-  --background: #2d283e;
   --accent: #802bb1;
-  --color1: #564f6f;
-  --color2: #4c495d;
-  --text-off: #d1d7e0;
-  --text-on: #ffffff;
+  --accent-fade: #564f6f;
+  --background: #2d283e;
+  --background-fade: #4c495d;
+  --text-fade: #d1d7e0;
+  --text: #ffffff;
 }
 
 html,
@@ -17,42 +17,36 @@ body {
 }
 
 body {
-  color: var(--text-on);
+  color: var(--text);
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-@media (min-width: 768px) {
-  #svelte {
-    margin-top: 2em;
-    margin-right: auto;
-    margin-left: auto;
-
-    max-width: 1000px;
-  }
-}
-
-h3 {
-  color: var(--text-off);
+h1, h2, h3 {
+  font-family: 'Josefin Sans', sans-serif;
   text-transform: capitalize;
-  font-size: 2em;
+}
+
+h2, h3 {
+  color: var(--text-fade);
   font-weight: 100;
 }
 
-a {
-  background-color: var(--accent);
-  color: var(--text-off);
-  text-decoration: none;
+h1 {
+  color: var(--text);
+  font-size: 3em;
+  font-weight: 200;
+  margin: 0.2em 0 0 4px;
 }
 
-a:hover {
-  background-color: var(--text-off);
-  color: var(--accent);
-  text-decoration: none;
+h2 {
+  font-size: 1.1em;
+  font-weight: 100;
+  margin: 0 0 16px 4px;
 }
 
-p {
-  font-weight: 300;
-  margin: 1em 1em;
+h3 {
+  font-size: 2em;
 }
+
+
