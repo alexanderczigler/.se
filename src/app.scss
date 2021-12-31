@@ -11,7 +11,6 @@
 
 html,
 body {
-  background-color: var(--background);
   font-family: 'Josefin Sans', sans-serif;
   font-size: large;
 }
@@ -20,6 +19,12 @@ body {
   color: var(--text);
   margin: 0;
   padding: 0;
+
+  background-color: var(--background);
+  opacity: 0.8;
+  background-image: radial-gradient(var(--background-fade) 0.5px, var(--background) 0.5px);
+  background-size: 10px 10px;
+  background-attachment: fixed;
 }
 
 h1,
@@ -36,7 +41,6 @@ h3 {
 }
 
 h1 {
-  color: var(--text);
   font-size: 3em;
   font-weight: 200;
   margin: 0.2em 0 0 4px;
@@ -50,4 +54,6 @@ h2 {
 
 h3 {
   font-size: 2em;
+  margin-top: 2em;
+  margin-left: 24px;
 }
