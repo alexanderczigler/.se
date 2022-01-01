@@ -1,8 +1,50 @@
-<script>
+<script context="module">
   import '../app.scss';
 
   import Footer from '../sections/Footer.svelte';
   import Header from '../sections/Header.svelte';
+
+  export async function load({ fetch }) {
+    const res = await fetch('/resume.json');
+    if (res.ok) {
+      return {
+        props: {
+          experiences: await res.json(),
+        },
+      };
+    }
+    return {
+      status: res.status,
+      error: new Error(`Unable to fetch experiences`),
+    };
+  }
+</script>
+
+<script>
+  export let experiences;
+
+  /*
+   * Sort experiences according to their end year and length.
+   */
+  const sortDelegate = (a, b) => {
+    const ongoing = new Date().getFullYear() + 1;
+
+    let weightA = a.start;
+    weightA += (a.end ? a.end : ongoing) - a.start;
+
+    let weightB = b.start;
+    weightB += (b.end ? b.end : ongoing) - b.start;
+
+    if (weightA > weightB) {
+      return -1;
+    }
+    if (weightA < weightB) {
+      return 1;
+    }
+    return 0;
+  };
+
+  experiences = experiences.sort((a, b) => sortDelegate(a, b));
 </script>
 
 <Header />
@@ -31,6 +73,17 @@
   </p>
 
   <h3>Experience</h3>
+
+  {#each experiences as experience}
+    <h4>{experience.role}</h4>
+    <h5>
+      {experience.client}
+    </h5>
+    <h6>
+      {experience.start} &mdash; {experience.end ?? ''}
+    </h6>
+    {@html experience.html}
+  {/each}
 
   <p>
     I am going to add my resumé here soon. In the mean time, check out my <a
@@ -89,10 +142,5 @@
     background-color: var(--accent-fade);
     color: var(--text);
     text-decoration: none;
-  }
-
-  p {
-    font-weight: 300;
-    margin: 1em 24px;
   }
 </style>

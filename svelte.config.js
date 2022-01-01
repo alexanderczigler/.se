@@ -1,13 +1,28 @@
+import { mdsvex } from 'mdsvex';
 import adapter from '@sveltejs/adapter-static';
+import preprocess from 'svelte-preprocess';
+import rehypeExternalLinks from 'rehype-external-links';
+
+const extensions = ['.svelte', '.md'];
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
+  extensions: extensions,
   kit: {
-    adapter: adapter(),
-
-    // hydrate the <div id="svelte"> element in src/app.html
     target: '#svelte',
+    adapter: adapter(),
   },
+  preprocess: [
+    preprocess({
+      preserve: ['module'],
+    }),
+    mdsvex({
+      extensions: extensions,
+      rehypePlugins: [
+        rehypeExternalLinks, // Adds 'target' and 'rel' to external links
+      ],
+    }),
+  ],
 };
 
 export default config;

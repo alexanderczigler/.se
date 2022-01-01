@@ -29,7 +29,9 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   font-family: 'Josefin Sans', sans-serif;
   text-transform: capitalize;
 }
@@ -56,4 +58,38 @@ h3 {
   font-size: 2em;
   margin-top: 2em;
   margin-left: 24px;
+}
+
+h4,
+h5,
+h6 {
+  margin: 0 24px;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: 2em;
+}
+
+h5 {
+  font-size: 1.2em;
+  font-weight: 200;
+}
+
+h6 {
+  color: var(--text-fade);
+  font-size: 0.8em;
+  font-weight: 100;
+}
+
+h5 span.fade {
+  color: var(--text-fade);
+  font-weight: 100;
+  font-size: 0.9em;
+}
+
+p {
+  font-weight: 300;
+  margin: 1em 24px;
 }
