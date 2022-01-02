@@ -42,13 +42,13 @@
 
   a,
   a:visited {
-    background-color: var(--accent);
-    color: var(--text-fade);
+    background-color: var(--highlight);
+    color: var(--text);
     text-decoration: none;
   }
 
   a:hover {
-    background-color: var(--accent-fade);
-    color: var(--text);
+    background-color: var(--text);
+    color: var(--highlight);
   }
 </style>
