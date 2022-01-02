@@ -10,7 +10,7 @@
 <div id="content">
   <h3>Hello</h3>
   <p>
-    I am a self-taught software developer currently working as a backend engingeer at <a
+    I am a self-taught software developer currently working as a backend engineer at <a
       href="https://iteam.se/">Iteam Solutions</a
     > in Stockholm.
   </p>
