@@ -2,7 +2,7 @@
   import Socials from '../components/Socials.svelte';
 
   import { url } from 'gravatar';
-  let gravatarUrl = url('dev@ilix.se', { s: 256 });
+  let gravatarUrl = url('nfo@ilix.se', { s: 256 });
 </script>
 
 <div id="header">

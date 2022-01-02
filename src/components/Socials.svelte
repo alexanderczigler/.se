@@ -4,7 +4,7 @@
   import Mail from './icons/Mail.svelte';
 </script>
 
-<a title="Send me an email" target="_blank" href="mailto:dev@ilix.se"> <Mail /></a>
+<a title="Send me an email" target="_blank" href="mailto:nfo@ilix.se"> <Mail /></a>
 <a
   title="Connect with me on LinkedIn"
   target="_blank"
