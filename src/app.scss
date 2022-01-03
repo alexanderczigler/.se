@@ -31,8 +31,10 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   font-family: 'Josefin Sans', sans-serif;
+  margin-left: 24px;
   text-transform: capitalize;
 }
 
@@ -43,21 +45,18 @@ h3 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 200;
-  margin: 0.2em 0 0 4px;
 }
 
 h2 {
-  font-size: 1.1em;
+  font-size: 1.5em;
   font-weight: 100;
-  margin: 0 0 16px 4px;
 }
 
 h3 {
   font-size: 2em;
   margin-top: 2em;
-  margin-left: 24px;
 }
 
 h4,
@@ -102,7 +101,7 @@ p {
 #content a,
 #content a:visited {
   background-color: var(--accent);
-  color: var(--text-fade);
+  color: var(--text);
   text-decoration: none;
 }
 
@@ -117,4 +116,8 @@ p {
     margin: 2em auto;
     max-width: 950px;
   }
+}
+
+span.fade {
+  color: var(--text-fade);
 }

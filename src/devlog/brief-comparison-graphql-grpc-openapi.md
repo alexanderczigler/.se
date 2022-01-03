@@ -6,6 +6,8 @@ tags:
 slug: brief-comparison-graphql-grpc-openapi
 ---
 
+# A brief comparison of GraphQL, gRPC and OpenAPI
+
 At Iteam we dedicate one friday of every month to experiment and learn. We call these fridays "lab days". Since I have been working with mostly .NET stuff lately I thought I would take the time to freshen up on API frameworks and nodejs today. So I decided to spend a day to build a simple API using each of GraphQL, gRPC and OpenAPI and then sum up whatever thoughts I would have at the end of the day.
 
 With time being very limited I focused on what the experience is setting up a fresh project and getting GET + POST routes working. This is in no way a deep analysis.

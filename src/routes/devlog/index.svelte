@@ -38,10 +38,14 @@
   };
 
   devlog = devlog.sort((a, b) => sortDelegate(a, b));
+
+  devlog.forEach((element) => {
+    element.published = new Date(element.published);
+  });
 </script>
 
 <svelte:head>
-  <title>Alexander Czigler - Resumé</title>
+  <title>Alexander Czigler - Devlog</title>
 </svelte:head>
 
 <Header />
@@ -51,15 +55,17 @@
   <h3>DevLog</h3>
 
   <p>
-    This is where I occasionally jot down some notes on things.. I do not expect you to read it nor
-    enjoy it.
+    This is where I plan to occasionally jot down some notes on code and such... time will tell what
+    I make of it 😊
   </p>
 
   <h3>Entries</h3>
 
   {#each devlog as entry}
-    <h4><a href={'/devlog/' + entry.slug}>{entry.title}</a></h4>
-    <!-- {@html experience.html} -->
+    <p>
+      <a href={'/devlog/' + entry.slug}>{entry.title}</a>
+      <span class="fade">({entry.published.toLocaleDateString('sv-SE')})</span>
+    </p>
   {/each}
 </div>
 
