@@ -38,59 +38,55 @@ h6 {
   text-transform: capitalize;
 }
 
+h1,
 h2,
 h3 {
-  color: var(--text-fade);
-  font-weight: 100;
-}
-
-h1 {
-  font-size: 2em;
-  font-weight: 200;
-}
-
-h2 {
-  font-size: 1.5em;
-  font-weight: 100;
-}
-
-h3 {
-  font-size: 2em;
+  color: var(--text);
   margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 h4,
 h5,
 h6 {
-  margin: 0 24px;
+  color: var(--text-fade);
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: 200;
+}
+
+h3 {
+  font-size: 1.6em;
+  font-weight: 100;
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 1.4em;
   font-weight: 400;
-  margin-top: 2em;
 }
 
 h5 {
   font-size: 1.2em;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 h6 {
-  color: var(--text-fade);
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: 100;
-}
-
-h5 span.fade {
-  color: var(--text-fade);
-  font-weight: 100;
-  font-size: 0.9em;
 }
 
 p {
   font-weight: 300;
-  margin: 1em 24px;
+  margin: 0 24px 1em 24px;
 }
 
 #content {
@@ -118,6 +114,6 @@ p {
   }
 }
 
-span.fade {
+.text-fade {
   color: var(--text-fade);
 }

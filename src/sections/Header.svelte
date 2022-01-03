@@ -9,8 +9,8 @@
   <span class="title">
     <img src={gravatarUrl} alt="Alexander" />
     <span>
-      <h1>Alexander Czigler</h1>
-      <h2>Backend Engineer & Partner at Iteam Solutions</h2></span
+      <span class="heading">Alexander Czigler</span>
+      <span class="subheading">Backend Engineer & Partner at Iteam Solutions</span></span
     >
   </span>
 
@@ -49,13 +49,14 @@
     margin-right: 1em;
   }
 
-  h1 {
+  span.heading {
     font-size: 3em;
     font-weight: 200;
     margin: 0.2em 0 0 4px;
+    display: block;
   }
 
-  h2 {
+  span.subheading {
     font-size: 1.1em;
     font-weight: 100;
     margin: 0 0 16px 4px;

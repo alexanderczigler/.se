@@ -49,7 +49,7 @@
 </svelte:head>
 
 <div id="content">
-  <h3>Resumé</h3>
+  <h1>Resumé</h1>
 
   <p>
     I have many years experience being a consultant. First from work as a freelance developer and
@@ -74,16 +74,14 @@
     >.
   </p>
 
-  <h3>Experience</h3>
+  <h2>Experience</h2>
 
   {#each experiences as experience}
-    <h4>{experience.role}</h4>
-    <h5>
-      {experience.client}
-    </h5>
-    <h6>
+    <h3>{experience.role}</h3>
+    <p>
+      {experience.client}<br />
       {experience.start} &mdash; {experience.end ?? ''}
-    </h6>
+    </p>
     {@html experience.html}
   {/each}
 </div>

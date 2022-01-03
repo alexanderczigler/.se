@@ -7,7 +7,7 @@
 </svelte:head>
 
 <div id="content">
-  <h3>Hello</h3>
+  <h1>Hello</h1>
   <p>
     I am a self-taught software developer currently working as a backend engineer at <a
       href="https://iteam.se/">Iteam Solutions</a
@@ -29,7 +29,7 @@
     with dancing I also pratice yoga and some basic acrobatics such as handbalancing.
   </p>
 
-  <h3>Social</h3>
+  <h2>Social</h2>
 
   <p>
     If you are curious about some of the non work-related aspects of me, you can find me on a few

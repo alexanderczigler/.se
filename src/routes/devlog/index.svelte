@@ -45,19 +45,19 @@
 </svelte:head>
 
 <div id="content">
-  <h3>DevLog</h3>
+  <h1>DevLog</h1>
 
   <p>
     This is where I plan to occasionally jot down some notes on code and such... time will tell what
     I make of it 😊
   </p>
 
-  <h3>Entries</h3>
+  <h2>Entries</h2>
 
   {#each devlog as entry}
     <p>
       <a href={'/devlog/' + entry.slug}>{entry.title}</a>
-      <span class="fade">({entry.published.toLocaleDateString('sv-SE')})</span>
+      <span class="text-fade">({entry.published.toLocaleDateString('sv-SE')})</span>
     </p>
   {/each}
 </div>
