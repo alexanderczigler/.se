@@ -1,18 +1,10 @@
 <script context="module">
   import '../app.scss';
-
-  import Footer from '../sections/Footer.svelte';
-  import Header from '../sections/Header.svelte';
-  import Menu from '../sections/Menu.svelte';
 </script>
 
 <svelte:head>
   <title>Alexander Czigler - Home</title>
 </svelte:head>
-
-<Header />
-
-<Menu />
 
 <div id="content">
   <h3>Hello</h3>
@@ -62,5 +54,3 @@
     walks.
   </p>
 </div>
-
-<Footer />

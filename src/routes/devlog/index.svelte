@@ -1,10 +1,6 @@
 <script context="module">
   import '../../app.scss';
 
-  import Footer from '../../sections/Footer.svelte';
-  import Header from '../../sections/Header.svelte';
-  import Menu from '../../sections/Menu.svelte';
-
   export async function load({ fetch }) {
     const res = await fetch('/devlog/devlog.json');
     if (res.ok) {
@@ -48,9 +44,6 @@
   <title>Alexander Czigler - Devlog</title>
 </svelte:head>
 
-<Header />
-<Menu />
-
 <div id="content">
   <h3>DevLog</h3>
 
@@ -68,5 +61,3 @@
     </p>
   {/each}
 </div>
-
-<Footer />

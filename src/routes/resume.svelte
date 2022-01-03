@@ -1,10 +1,6 @@
 <script context="module">
   import '../app.scss';
 
-  import Footer from '../sections/Footer.svelte';
-  import Header from '../sections/Header.svelte';
-  import Menu from '../sections/Menu.svelte';
-
   export async function load({ fetch }) {
     const res = await fetch('/resume.json');
     if (res.ok) {
@@ -52,9 +48,6 @@
   <title>Alexander Czigler - Resumé</title>
 </svelte:head>
 
-<Header />
-<Menu />
-
 <div id="content">
   <h3>Resumé</h3>
 
@@ -94,5 +87,3 @@
     {@html experience.html}
   {/each}
 </div>
-
-<Footer />
