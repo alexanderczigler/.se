@@ -43,7 +43,7 @@
   a,
   a:visited {
     background-color: var(--accent);
-    color: var(--text-fade);
+    color: var(--text);
     text-decoration: none;
   }
 
