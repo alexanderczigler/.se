@@ -93,3 +93,28 @@ p {
   font-weight: 300;
   margin: 1em 24px;
 }
+
+#content {
+  margin: 0;
+  padding-bottom: 2em;
+}
+
+#content a,
+#content a:visited {
+  background-color: var(--accent);
+  color: var(--text-fade);
+  text-decoration: none;
+}
+
+#content a:hover {
+  background-color: var(--accent-fade);
+  color: var(--text);
+  text-decoration: none;
+}
+
+@media (min-width: 950px) {
+  #content {
+    margin: 2em auto;
+    max-width: 950px;
+  }
+}

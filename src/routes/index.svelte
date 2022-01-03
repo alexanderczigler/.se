@@ -3,51 +3,16 @@
 
   import Footer from '../sections/Footer.svelte';
   import Header from '../sections/Header.svelte';
-
-  export async function load({ fetch }) {
-    const res = await fetch('/resume.json');
-    if (res.ok) {
-      return {
-        props: {
-          experiences: await res.json(),
-        },
-      };
-    }
-    return {
-      status: res.status,
-      error: new Error(`Unable to fetch experiences`),
-    };
-  }
+  import Menu from '../sections/Menu.svelte';
 </script>
 
-<script>
-  export let experiences;
-
-  /*
-   * Sort experiences according to their end year and length.
-   */
-  const sortDelegate = (a, b) => {
-    const ongoing = new Date().getFullYear() + 1;
-
-    let weightA = a.start;
-    weightA += (a.end ? a.end : ongoing) - a.start;
-
-    let weightB = b.start;
-    weightB += (b.end ? b.end : ongoing) - b.start;
-
-    if (weightA > weightB) {
-      return -1;
-    }
-    if (weightA < weightB) {
-      return 1;
-    }
-    return 0;
-  };
-
-  experiences = experiences.sort((a, b) => sortDelegate(a, b));
-</script>
+<svelte:head>
+  <title>Alexander Czigler - Home</title>
+</svelte:head>
 
 <Header />
+
+<Menu />
 
 <div id="content">
   <h3>Hello</h3>
@@ -70,25 +35,6 @@
     One of my latest hobbies that I have picked up is dancing. I took classes learning Lindy Hop a
     few years ago and after that I switched to poledancing which I still practice regularly. Along
     with dancing I also pratice yoga and some basic acrobatics such as handbalancing.
-  </p>
-
-  <h3>Experience</h3>
-
-  {#each experiences as experience}
-    <h4>{experience.role}</h4>
-    <h5>
-      {experience.client}
-    </h5>
-    <h6>
-      {experience.start} &mdash; {experience.end ?? ''}
-    </h6>
-    {@html experience.html}
-  {/each}
-
-  <p>
-    I am going to add my resumé here soon. In the mean time, check out my <a
-      href="https://linkedin.com/in/alexanderczigler">LinkedIn profile</a
-    >.
   </p>
 
   <h3>Social</h3>
@@ -118,29 +64,3 @@
 </div>
 
 <Footer />
-
-<style>
-  #content {
-    margin: 0;
-    padding-bottom: 2em;
-  }
-
-  @media (min-width: 950px) {
-    #content {
-      margin: 2em auto;
-      max-width: 950px;
-    }
-  }
-
-  a {
-    background-color: var(--accent);
-    color: var(--text-fade);
-    text-decoration: none;
-  }
-
-  a:hover {
-    background-color: var(--accent-fade);
-    color: var(--text);
-    text-decoration: none;
-  }
-</style>
