@@ -29,7 +29,6 @@
 
 <style>
   #footer {
-    background-color: var(--background-fade);
     border-top: 1px var(--text-fade) solid;
     padding: 2em 0 4em 0;
     text-align: center;

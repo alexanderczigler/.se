@@ -24,8 +24,7 @@
     border-bottom: 1px var(--accent) solid;
     display: flex;
     flex-direction: column;
-    margin: 2em 0;
-    padding-bottom: 1em;
+    padding: 2em 0 1em 0;
     text-align: center;
   }
 
@@ -84,7 +83,7 @@
   @media (min-width: 950px) {
     #header {
       justify-content: space-between;
-      margin: 2em auto;
+      margin: 0 auto;
       max-width: 950px;
     }
   }

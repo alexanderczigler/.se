@@ -16,15 +16,10 @@ body {
 }
 
 body {
+  background-color: var(--background-fade);
   color: var(--text);
   margin: 0;
   padding: 0;
-
-  background-color: var(--background);
-  opacity: 0.8;
-  background-image: radial-gradient(var(--background-fade) 0.5px, var(--background) 0.5px);
-  background-size: 10px 10px;
-  background-attachment: fixed;
 }
 
 h1,
@@ -109,7 +104,7 @@ p {
 
 @media (min-width: 950px) {
   #content {
-    margin: 2em auto;
+    margin: 0 auto;
     max-width: 950px;
   }
 }

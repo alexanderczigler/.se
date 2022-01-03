@@ -8,7 +8,7 @@
   #menu {
     color: var(--text);
     font-family: 'Fira Code', monospace;
-    margin: 0 auto;
+    margin: 2em auto;
     max-width: 900px;
     text-align: center;
   }
