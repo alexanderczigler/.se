@@ -8,9 +8,9 @@
     Alexander Czigler
   </p>
 
-  <span class="icon-links">
+  <div class="socials">
     <Socials />
-  </span>
+  </div>
 
   <p>
     <a
@@ -50,5 +50,10 @@
   a:hover {
     background-color: var(--accent-fade);
     color: var(--text);
+  }
+
+  .socials {
+    margin-bottom: 24px;
+    margin-top: 24px;
   }
 </style>

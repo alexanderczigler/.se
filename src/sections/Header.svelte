@@ -47,6 +47,7 @@
 
   span.socials {
     margin-right: 1em;
+    margin-top: 24px;
   }
 
   span.heading {
@@ -68,6 +69,10 @@
       justify-content: space-between;
 
       text-align: left;
+    }
+
+    span.socials {
+      margin-top: 0;
     }
 
     span.title {
