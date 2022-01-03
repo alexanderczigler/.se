@@ -17,14 +17,14 @@
   export function load({ page }) {
     const { slug } = page.params;
 
-    const filteredlog = logs.find((log) => {
+    const filteredLog = logs.find((log) => {
       return log.slug.toLowerCase() === slug.toLowerCase();
     });
 
     return {
       props: {
-        devlog: filteredlog.log.default,
-        title: filteredlog.title,
+        devlog: filteredLog.log.default,
+        title: filteredLog.title,
       },
     };
   }
