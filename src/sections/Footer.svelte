@@ -5,7 +5,7 @@
 <div id="footer">
   <p>
     2022<br />
-    Alexander Matthias Czigler
+    Alexander Czigler
   </p>
 
   <span class="icon-links">

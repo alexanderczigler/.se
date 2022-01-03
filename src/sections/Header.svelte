@@ -9,7 +9,7 @@
   <span class="title">
     <img src={gravatarUrl} alt="Alexander" />
     <span>
-      <h1>Alexander M. Czigler</h1>
+      <h1>Alexander Czigler</h1>
       <h2>Backend Engineer & Partner at Iteam Solutions</h2></span
     >
   </span>
