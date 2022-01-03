@@ -49,6 +49,18 @@
     margin-right: 1em;
   }
 
+  h1 {
+    font-size: 3em;
+    font-weight: 200;
+    margin: 0.2em 0 0 4px;
+  }
+
+  h2 {
+    font-size: 1.1em;
+    font-weight: 100;
+    margin: 0 0 16px 4px;
+  }
+
   @media (min-width: 768px) {
     #header {
       flex-direction: row;

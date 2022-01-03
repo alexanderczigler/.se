@@ -1,11 +1,18 @@
-<script>
+<script context="module">
   import '../app.scss';
 
   import Footer from '../sections/Footer.svelte';
   import Header from '../sections/Header.svelte';
+  import Menu from '../sections/Menu.svelte';
 </script>
 
+<svelte:head>
+  <title>Alexander Czigler - Home</title>
+</svelte:head>
+
 <Header />
+
+<Menu />
 
 <div id="content">
   <h3>Hello</h3>
@@ -28,14 +35,6 @@
     One of my latest hobbies that I have picked up is dancing. I took classes learning Lindy Hop a
     few years ago and after that I switched to poledancing which I still practice regularly. Along
     with dancing I also pratice yoga and some basic acrobatics such as handbalancing.
-  </p>
-
-  <h3>Experience</h3>
-
-  <p>
-    I am going to add my resumé here soon. In the mean time, check out my <a
-      href="https://linkedin.com/in/alexanderczigler">LinkedIn profile</a
-    >.
   </p>
 
   <h3>Social</h3>
@@ -65,34 +64,3 @@
 </div>
 
 <Footer />
-
-<style>
-  #content {
-    margin: 0;
-    padding-bottom: 2em;
-  }
-
-  @media (min-width: 950px) {
-    #content {
-      margin: 2em auto;
-      max-width: 950px;
-    }
-  }
-
-  a {
-    background-color: var(--accent);
-    color: var(--text-fade);
-    text-decoration: none;
-  }
-
-  a:hover {
-    background-color: var(--accent-fade);
-    color: var(--text);
-    text-decoration: none;
-  }
-
-  p {
-    font-weight: 300;
-    margin: 1em 24px;
-  }
-</style>
