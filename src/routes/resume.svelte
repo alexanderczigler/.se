@@ -78,10 +78,24 @@
 
   {#each experiences as experience}
     <h3>{experience.role}</h3>
-    <p>
-      {experience.client}<br />
-      {experience.start} &mdash; {experience.end ?? ''}
+    <p class="client text-fade">
+      &raquo; {experience.client}
+    </p>
+
+    <p class="period text-fade">
+      &raquo; {experience.start} &mdash; {experience.end ?? ''}
     </p>
     {@html experience.html}
   {/each}
 </div>
+
+<style>
+  .client {
+    margin-bottom: 0;
+    text-transform: capitalize;
+  }
+
+  .period {
+    margin-top: 0;
+  }
+</style>
