@@ -1,7 +1,7 @@
 <div id="menu">
-  <a href="/">Hello</a>
-  <a href="/resume">Resumé</a>
-  <a href="/devlog">DevLog</a>
+  <a href="/">hello</a>
+  <a href="/resume">resumé</a>
+  <a href="/devlog">devlog</a>
 </div>
 
 <style>

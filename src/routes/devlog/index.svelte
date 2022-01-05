@@ -45,7 +45,7 @@
 </svelte:head>
 
 <div id="content">
-  <h1>DevLog</h1>
+  <h1>Devlog</h1>
 
   <p>
     This is where I plan to occasionally jot down some notes on code and such... time will tell what
