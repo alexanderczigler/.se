@@ -92,7 +92,6 @@
 <style>
   .client {
     margin-bottom: 0;
-    text-transform: capitalize;
   }
 
   .period {

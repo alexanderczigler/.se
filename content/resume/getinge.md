@@ -1,6 +1,6 @@
 ---
 role: BI consultant, developer
-client: getinge
+client: Getinge
 start: 2008
 end: 2010
 tags: business intelligence, lawson m3, .net, dataset vision, sql server

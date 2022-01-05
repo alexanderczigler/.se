@@ -1,6 +1,6 @@
 ---
 role: technology specialist
-client: predictive movement
+client: Predictive Movement
 start: 2020
 end: 2021
 tags: research, digital twin, ux, node, kubernetes

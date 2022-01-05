@@ -1,6 +1,6 @@
 ---
 role: freelance developer, techie
-client: various
+client: Various
 start: 2004
 end: 2013
 tags: web design, linux, php, .net, microsoft, bsd, apache, nginx, mysql, networking
