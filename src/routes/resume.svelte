@@ -1,12 +1,18 @@
 <script context="module">
   import '../app.scss';
 
-  export async function load({ fetch }) {
-    const res = await fetch('/resume.json');
+  export async function load({ fetch, page }) {
+    let tag = '';
+    if (page.query.has('tag')) {
+      tag = page.query.get('tag');
+    }
+
+    const res = await fetch(`/resume.json?tag=${tag}`);
     if (res.ok) {
       return {
         props: {
           experiences: await res.json(),
+          tag: tag,
         },
       };
     }
@@ -19,6 +25,7 @@
 
 <script>
   export let experiences;
+  export let tag;
 
   /*
    * Sort experiences according to their end year and length.
@@ -76,6 +83,10 @@
 
   <h2>Experience</h2>
 
+  {#if tag !== ''}
+    <p>Showing experience that matches the tag <code>{tag}</code>.</p>
+  {/if}
+
   {#each experiences as experience}
     <h3>{experience.role}</h3>
     <p class="client text-fade">
@@ -86,6 +97,13 @@
       &raquo; {experience.start} &mdash; {experience.end ?? ''}
     </p>
     {@html experience.html}
+
+    <p>
+      <span class="text-fade">&raquo; tags</span>
+      {#each experience.tags as tag}
+        <a class="tag" href="?tag={tag}">#{tag}</a>&nbsp;
+      {/each}
+    </p>
   {/each}
 </div>
 
@@ -96,5 +114,11 @@
 
   .period {
     margin-top: 0;
+  }
+
+  a.tag {
+    color: var(--accent);
+    padding: 3px;
+    border-radius: 3px;
   }
 </style>
