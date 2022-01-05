@@ -7,7 +7,7 @@
 </svelte:head>
 
 <div id="content">
-  <h1>Test (H1)</h1>
+  <h1>This is an H1</h1>
   <p>
     Oh. You found my style test page. This is a page I made just to test out the different heading
     and text styles. Since it is convenient to have them all on a single page when tinkering with
@@ -15,6 +15,11 @@
   </p>
 
   <p>If you feel lost I suggest you go back to the <a href="http://ilix.se/">start page</a>!</p>
+
+  <p class="text-fade">
+    Oh and this is an example of a slightly a faded paragraph. It should be readable but also
+    notably less prominent.
+  </p>
 
   <h2>This is an H2</h2>
 
@@ -25,8 +30,6 @@
     shorthair devonshire rex ragdoll. Balinese donskoy. Ragdoll grimalkin, ragdoll or singapura for
     norwegian forest. Norwegian forest lynx for egyptian mau yet balinese yet scottish fold malkin.
   </p>
-
-  <p class="text-fade">This is slightly a faded paragraph.</p>
 
   <h3>This is an H3</h3>
 
