@@ -64,7 +64,7 @@ It is easy to use your own domain when deploying with surge. Simply run surge an
 
 ### GitHub Action
 
-Now, assuming you are using GitHub, you may want your website to auto-deploy whenever you push/merge something to your main branch. This can be achieved easily with [Damian Świstowski's GitHub Action](dswistowski/surge-sh-action@v1.0.1).
+Now, assuming you are using GitHub, you may want your website to auto-deploy whenever you push/merge something to your main branch. This can be achieved easily with [Damian Świstowski's GitHub Action](https://github.com/dswistowski/surge-sh-action).
 
 First of all you need to create a couple of secrets in your GitHub repository. This is done via the Settings -> Secrets page. Add a secret called `surge_login` that contains the email address you used to register on surge. Then add another secret called `surge_token` that you get by running `surge token` from the command-line. (Treat this token as you would treat a password!)
 
