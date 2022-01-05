@@ -113,3 +113,28 @@ p {
   color: var(--text-fade);
   font-weight: 100;
 }
+
+code {
+  background-color: var(--accent-fade);
+  border-radius: 3px;
+  color: var(--text-fade);
+  font-family: 'Fira Code', monospace;
+  font-size: 0.8em;
+  font-weight: 100;
+  padding: 0 2px;
+}
+
+pre {
+  background-color: var(--accent-fade);
+  border-radius: 3px;
+  color: var(--text-fade);
+  font-family: 'Fira Code', monospace;
+  font-size: 0.8em;
+  font-weight: 100;
+  margin-left: 24px;
+  padding: 8px 8px 8px 16px;
+}
+
+pre code {
+  padding: 0;
+}
