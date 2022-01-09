@@ -1,4 +1,4 @@
-<div id="menu">
+<div id="menu" role="navigation">
   <a href="/">hello</a>
   <a href="/resume">resumé</a>
   <a href="/devlog">devlog</a>

@@ -2,7 +2,7 @@
   import Socials from '../components/Socials.svelte';
 </script>
 
-<div id="footer">
+<div id="footer" role="contentinfo">
   <p>
     2022<br />
     Alexander Czigler
