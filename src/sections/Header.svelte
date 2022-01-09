@@ -7,7 +7,7 @@
 </script>
 
 <div id="header">
-  <span class="title">
+  <span class="title" role="banner">
     <img src={gravatarUrl} alt="Alexander" />
     <span>
       <span class="heading">Alexander Czigler</span>

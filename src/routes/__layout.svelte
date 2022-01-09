@@ -6,11 +6,11 @@
   import Menu from '../sections/Menu.svelte';
 </script>
 
-<div class="meow">
+<div class="layout">
   <Header />
   <Menu />
 
-  <div id="content">
+  <div id="content" role="main">
     <slot />
   </div>
 </div>
@@ -18,7 +18,7 @@
 <Footer />
 
 <style>
-  .meow {
+  .layout {
     background-color: var(--background);
     background-image: radial-gradient(var(--background-fade) 0.5px, var(--background) 0.5px);
     background-size: 10px 10px;
