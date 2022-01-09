@@ -3,7 +3,7 @@ role: developer, technical advisor
 client: Vimla
 start: 2014
 end: 2018
-tags: .net, node, rest, linux, oracle, docker, klarna, dibs
+technologies: .NET, NodeJS, REST, Linux, Oracle, Docker, Klarna, DIBS
 ---
 
 Developer and technical advisor for Vimla’s website/customer portal (.NET), REST API (nodejs) and community platform (nodebb).,

@@ -3,7 +3,7 @@ role: Software developer
 client: iBusiness
 start: 2009
 end: 2010
-tags: .net, sql server, biztalk, ruby, forensics
+technologies: .NET, SQL_Server, Biztalk, Ruby
 ---
 
 iBusiness hired me and a few other consultants to manage their technology stack when all of their regular IT staff had left the company. It was a very interesting assignment because we had to learn how everything worked by ourselves since there was nobody else to introduce us to the software ecosystem.

@@ -3,7 +3,7 @@ role: technology specialist
 client: Predictive Movement
 start: 2020
 end: 2021
-tags: research, digital twin, ux, node, kubernetes
+technologies: Digital_Twin, UX, NodeJS, Kubernetes
 ---
 
 I coordinated the real-world tests where we travelled to Ljusdal and Pajala respectively to learn about the transport industry and to test our hypotheses. The preparations for each test included conducting interviews, demonstration our platform and the ideas underlying the research project and structuring my own and the team's learning journey.
