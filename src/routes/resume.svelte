@@ -1,23 +1,35 @@
 <script context="module">
-  import '../app.scss';
+  const resumeMarkdown = import.meta.globEager(`../resume/*.md`);
 
-  export async function load({ fetch }) {
-    const res = await fetch(`/resume.json`);
-    if (res.ok) {
-      return {
-        props: {
-          experiences: await res.json(),
-        },
-      };
+  let resume = [];
+  for (let path in resumeMarkdown) {
+    const experience = resumeMarkdown[path];
+    const metadata = experience.metadata;
+
+    if (typeof metadata.technologies === 'string') {
+      metadata.technologies = metadata.technologies.replaceAll(' ', '');
+      metadata.technologies = metadata.technologies.replaceAll('_', ' ');
+      metadata.technologies = metadata.technologies.split(',');
+      metadata.technologies = metadata.technologies.sort();
     }
+
+    resume.push({
+      metadata,
+      experience: experience,
+    });
+  }
+
+  export function load() {
     return {
-      status: res.status,
-      error: new Error(`Unable to fetch experiences`),
+      props: {
+        experiences: resume,
+      },
     };
   }
 </script>
 
 <script>
+  import '../app.scss';
   export let experiences;
 
   /*
@@ -26,11 +38,11 @@
   const sortDelegate = (a, b) => {
     const ongoing = new Date().getFullYear() + 1;
 
-    let weightA = a.start;
-    weightA += (a.end ? a.end : ongoing) - a.start;
+    let weightA = a.metadata.start;
+    weightA += (a.metadata.end ? a.metadata.end : ongoing) - a.metadata.start;
 
-    let weightB = b.start;
-    weightB += (b.end ? b.end : ongoing) - b.start;
+    let weightB = b.metadata.start;
+    weightB += (b.metadata.end ? b.metadata.end : ongoing) - b.metadata.start;
 
     if (weightA > weightB) {
       return -1;
@@ -77,25 +89,25 @@
   <h2>Experience</h2>
 
   {#each experiences as experience}
-    <h3>{experience.role}</h3>
+    <h3>{experience.metadata.role}</h3>
     <p class="client text-fade">
-      &raquo; {experience.client}
+      &raquo; {experience.metadata.client}
     </p>
 
     <p class="period text-fade">
-      &raquo; {experience.start} &mdash; {experience.end ?? ''}
+      &raquo; {experience.metadata.start} &mdash; {experience.metadata.end ?? ''}
     </p>
 
     <p>
       <span class="text-fade">
         &raquo;
-        {#each experience.technologies as technology}
+        {#each experience.metadata.technologies as technology}
           <span class="technology">{technology}</span>
         {/each}
       </span>
     </p>
 
-    {@html experience.html}
+    <svelte:component this={experience.experience.default} />
   {/each}
 </div>
 
