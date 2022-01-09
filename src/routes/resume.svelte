@@ -82,12 +82,12 @@
       &raquo; {experience.client}
     </p>
 
-    <p class="period text-fade">
+    <p class="period text-fade pb-0">
       &raquo; {experience.start} &mdash; {experience.end ?? ''}
     </p>
 
     <p>
-      <span class="text-fade">
+      <span class="text-fade pt-0">
         &raquo;
         {#each experience.technologies as technology}
           <span class="technology">{technology}</span>
