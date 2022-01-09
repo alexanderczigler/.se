@@ -5,12 +5,12 @@
 <div id="footer">
   <p>
     2022<br />
-    Alexander Matthias Czigler
+    Alexander Czigler
   </p>
 
-  <span class="icon-links">
+  <div class="socials">
     <Socials />
-  </span>
+  </div>
 
   <p>
     <a
@@ -29,7 +29,6 @@
 
 <style>
   #footer {
-    background-color: var(--background-fade);
     border-top: 1px var(--text-fade) solid;
     padding: 2em 0 4em 0;
     text-align: center;
@@ -42,7 +41,7 @@
 
   a,
   a:visited {
-    background-color: var(--highlight);
+    background-color: var(--accent);
     color: var(--text);
     text-decoration: none;
   }
@@ -50,5 +49,10 @@
   a:hover {
     background-color: var(--text);
     color: var(--highlight);
+  }
+
+  .socials {
+    margin-bottom: 24px;
+    margin-top: 24px;
   }
 </style>

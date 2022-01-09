@@ -1,16 +1,15 @@
-<script>
+<script context="module">
   import '../app.scss';
-
-  import Footer from '../sections/Footer.svelte';
-  import Header from '../sections/Header.svelte';
 </script>
 
-<Header />
+<svelte:head>
+  <title>Alexander Czigler - Home</title>
+</svelte:head>
 
 <div id="content">
-  <h3>Hello</h3>
+  <h1>Hello</h1>
   <p>
-    I am a self-taught software developer currently working as a backend engingeer at <a
+    I am a self-taught software developer currently working as a backend engineer at <a
       href="https://iteam.se/">Iteam Solutions</a
     > in Stockholm.
   </p>
@@ -30,15 +29,7 @@
     with dancing I also pratice yoga and some basic acrobatics such as handbalancing.
   </p>
 
-  <h3>Experience</h3>
-
-  <p>
-    I am going to add my resumé here soon. In the mean time, check out my <a
-      href="https://linkedin.com/in/alexanderczigler">LinkedIn profile</a
-    >.
-  </p>
-
-  <h3>Social</h3>
+  <h2>Social</h2>
 
   <p>
     If you are curious about some of the non work-related aspects of me, you can find me on a few
@@ -63,36 +54,3 @@
     walks.
   </p>
 </div>
-
-<Footer />
-
-<style>
-  #content {
-    margin: 0;
-    padding-bottom: 2em;
-  }
-
-  @media (min-width: 950px) {
-    #content {
-      margin: 2em auto;
-      max-width: 950px;
-    }
-  }
-
-  a {
-    background-color: var(--highlight);
-    color: var(--text);
-    text-decoration: none;
-  }
-
-  a:hover {
-    background-color: var(--text);
-    color: var(--highlight);
-    text-decoration: none;
-  }
-
-  p {
-    font-weight: 300;
-    margin: 1em 24px;
-  }
-</style>

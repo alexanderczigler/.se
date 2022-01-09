@@ -2,9 +2,11 @@
   import GitHub from './icons/GitHub.svelte';
   import LinkedIn from './icons/LinkedIn.svelte';
   import Mail from './icons/Mail.svelte';
+
+  import config from '../lib/config';
 </script>
 
-<a title="Send me an email" target="_blank" href="mailto:dev@ilix.se"> <Mail /></a>
+<a title="Send me an email" target="_blank" href="mailto:{config.email}"> <Mail /></a>
 <a
   title="Connect with me on LinkedIn"
   target="_blank"

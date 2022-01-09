@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Josefin+Sans:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@100;200;300;400&family=Josefin+Sans:wght@100;200;300;400&display=swap');
 
 :root {
   --accent: #3aafa9;
@@ -16,44 +16,127 @@ body {
 }
 
 body {
+  background-color: var(--background-fade);
   color: var(--text);
   margin: 0;
   padding: 0;
+}
 
-  background-color: var(--background);
-  opacity: 0.8;
-  background-image: radial-gradient(var(--background-fade) 0.5px, var(--background) 0.5px);
-  background-size: 10px 10px;
-  background-attachment: fixed;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Josefin Sans', sans-serif;
+  margin-left: 24px;
+  text-transform: capitalize;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Josefin Sans', sans-serif;
-  text-transform: capitalize;
+  color: var(--text);
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
-h2,
+h4,
+h5,
+h6 {
+  color: var(--text-fade);
+  font-family: 'Fira Code', monospace;
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 1.3em;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: 200;
+}
+
 h3 {
+  font-size: 1.6em;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1.2em;
+  font-weight: 200;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: 100;
+}
+
+p {
+  font-weight: 200;
+  margin: 0 24px 1em 24px;
+}
+
+#content {
+  margin: 0;
+  padding-bottom: 2em;
+}
+
+#content a,
+#content a:visited {
+  background-color: var(--accent);
+  color: var(--text);
+  text-decoration: none;
+}
+
+#content a:hover {
+  background-color: var(--text);
+  color: var(--highlight);
+  text-decoration: none;
+}
+
+@media (min-width: 950px) {
+  #content {
+    margin: 0 auto;
+    max-width: 950px;
+  }
+}
+
+.text-fade {
   color: var(--text-fade);
   font-weight: 100;
 }
 
-h1 {
-  font-size: 3em;
-  font-weight: 200;
-  margin: 0.2em 0 0 4px;
-}
-
-h2 {
-  font-size: 1.1em;
+code {
+  background-color: var(--accent-fade);
+  border-radius: 3px;
+  color: var(--text-fade);
+  font-family: 'Fira Code', monospace;
+  font-size: 0.8em;
   font-weight: 100;
-  margin: 0 0 16px 4px;
+  padding: 0 2px;
 }
 
-h3 {
-  font-size: 2em;
-  margin-top: 2em;
+pre {
+  background-color: var(--accent-fade);
+  border-radius: 3px;
+  color: var(--text-fade);
+  font-family: 'Fira Code', monospace;
+  font-size: 0.8em;
+  font-weight: 100;
   margin-left: 24px;
+  padding: 8px 8px 8px 16px;
+}
+
+pre code {
+  padding: 0;
 }
