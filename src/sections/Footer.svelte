@@ -47,8 +47,8 @@
   }
 
   a:hover {
-    background-color: var(--accent-fade);
-    color: var(--text);
+    background-color: var(--text);
+    color: var(--highlight);
   }
 
   .socials {

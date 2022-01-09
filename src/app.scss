@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@100;200;300;400&family=Josefin+Sans:wght@100;200;300;400&display=swap');
 
 :root {
-  --accent: #802bb1;
-  --accent-fade: #564f6f;
-  --background: #2d283e;
-  --background-fade: #4c495d;
-  --text-fade: #d1d7e0;
-  --text: #ffffff;
+  --accent: #3aafa9;
+  --background: #17252a;
+  --background-fade: #2e3a3f;
+  --highlight: #2b7a78;
+  --text-fade: #def2f1;
+  --text: #feffff;
 }
 
 html,
@@ -52,33 +52,33 @@ h6 {
 
 h1 {
   font-size: 2em;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 1.3em;
 }
 
 h2 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: 200;
 }
 
 h3 {
-  font-size: 1.6em;
-  font-weight: 100;
-}
-
-h4 {
   font-size: 1.4em;
   font-weight: 400;
 }
 
+h4 {
+  font-size: 1.3em;
+  font-weight: 100;
+}
+
 h5 {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 200;
 }
 
 h6 {
   font-size: 1em;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 p {
@@ -99,8 +99,8 @@ p {
 }
 
 #content a:hover {
-  background-color: var(--accent-fade);
-  color: var(--text);
+  background-color: var(--text);
+  color: var(--highlight);
   text-decoration: none;
 }
 
@@ -116,27 +116,23 @@ p {
   font-weight: 100;
 }
 
-code {
-  background-color: var(--accent-fade);
+code,
+pre {
+  background-color: var(--background);
   border-radius: 3px;
   color: var(--text-fade);
   font-family: 'Fira Code', monospace;
   font-size: 0.8em;
   font-weight: 100;
+  padding: 0;
+}
+
+code {
   padding: 0 2px;
 }
 
 pre {
-  background-color: var(--accent-fade);
-  border-radius: 3px;
-  color: var(--text-fade);
-  font-family: 'Fira Code', monospace;
-  font-size: 0.8em;
-  font-weight: 100;
+  border: 1px var(--background-fade) solid;
   margin-left: 24px;
   padding: 8px 8px 8px 16px;
-}
-
-pre code {
-  padding: 0;
 }
