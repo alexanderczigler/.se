@@ -8,25 +8,28 @@
 
 <div id="content">
   <h1>Hello</h1>
+
   <p>
-    I am a self-taught software developer currently working as a backend engineer at <a
-      href="https://iteam.se/">Iteam Solutions</a
+    I am a self-taught software developer &amp; devops engineer currently working at <a
+      href="https://iteam.se/"
+      target="_blank">Iteam Solutions</a
     > in Stockholm.
   </p>
 
   <p>
     My passion for software and the web began in the late 90's when I started learning basic HTML
-    and making homepages. When I got DSL in the early 00's I built my first server and started
-    learning about linux and setting up networks, web servers and firewalls. Since then I have been
-    learning more and more all the time by continuous exploration and by surrounding myself with
-    talented people who inspire me to learn and grow.
+    and making homepages. In 2002 I built my first server from computer parts and started learning
+    about linux and setting up networks, web servers and firewalls. From my early teens and
+    throughout my career I have been on a continuous journey of learning and exploration. After I
+    started working as a consultant in Stockholm I have been very lucky to be able to surround
+    myself with talented people who inspire me to learn and grow.
   </p>
 
+  <img src="hero.png" width="900" alt="Me doing a headstand against my pole." />
+
   <p>
-    Outside of computers and technology I enjoy reading, working out and being outdoors in nature.
-    One of my latest hobbies that I have picked up is dancing. I took classes learning Lindy Hop a
-    few years ago and after that I switched to poledancing which I still practice regularly. Along
-    with dancing I also pratice yoga and some basic acrobatics such as handbalancing.
+    Outside of computers and tech I am also passionate about dancing and yoga. I practice
+    poledancing and acrobatics regularly and I also enjoy cooking and reading.
   </p>
 
   <h2>Social</h2>
@@ -54,3 +57,11 @@
     walks.
   </p>
 </div>
+
+<style>
+  #content img {
+    border: 1px var(--text-fade) solid;
+    border-radius: 4px;
+    margin: 1em 24px;
+  }
+</style>
