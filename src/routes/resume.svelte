@@ -99,7 +99,7 @@
     </p>
 
     <p>
-      <span class="text-fade">
+      <span class="text-fade pt-0">
         &raquo;
         {#each experience.metadata.technologies as technology}
           <span class="technology">{technology}</span>

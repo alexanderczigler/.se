@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@100;200;300;400&family=Josefin+Sans:wght@100;200;300;400&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --accent: #3aafa9;
   --background: #17252a;
@@ -91,14 +95,14 @@ p {
   padding-bottom: 2em;
 }
 
-#content a,
-#content a:visited {
+a,
+a:visited {
   background-color: var(--accent);
   color: var(--text);
   text-decoration: none;
 }
 
-#content a:hover {
+a:hover {
   background-color: var(--text);
   color: var(--highlight);
   text-decoration: none;

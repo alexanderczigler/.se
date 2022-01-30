@@ -25,7 +25,7 @@
     myself with talented people who inspire me to learn and grow.
   </p>
 
-  <img src="hero.png" width="900" alt="Me doing a headstand against my pole." />
+  <img src="hero.png" alt="Me doing a headstand against my pole." />
 
   <p>
     Outside of computers and tech I am also passionate about dancing and yoga. I practice
@@ -63,5 +63,6 @@
     border: 1px var(--text-fade) solid;
     border-radius: 4px;
     margin: 1em 24px;
+    width: 90%;
   }
 </style>
