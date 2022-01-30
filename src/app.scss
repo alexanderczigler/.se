@@ -95,14 +95,14 @@ p {
   padding-bottom: 2em;
 }
 
-#content a,
-#content a:visited {
+a,
+a:visited {
   background-color: var(--accent);
   color: var(--text);
   text-decoration: none;
 }
 
-#content a:hover {
+a:hover {
   background-color: var(--text);
   color: var(--highlight);
   text-decoration: none;
