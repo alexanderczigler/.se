@@ -1,12 +1,13 @@
 <script>
   import Socials from '../components/Socials.svelte';
 
+  import config from '../lib/config';
   import { url } from 'gravatar';
-  let gravatarUrl = url('nfo@ilix.se', { s: 256 });
+  let gravatarUrl = url(config.email, { s: 256 });
 </script>
 
 <div id="header">
-  <span class="title">
+  <span class="title" role="banner">
     <img src={gravatarUrl} alt="Alexander" />
     <span>
       <span class="heading">Alexander Czigler</span>
